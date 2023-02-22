@@ -7,7 +7,7 @@
  		INSERT INTO FOOD_MEMBER VALUES(#{id}, #{pw}, #{name}, #{tel}, #{mail}, #{addr1}, #{addr2}, #{addr3}, #{adminCk}, SYSDATE)
  	</insert>
  	
- 	<select id="idCheck">
+ 	<select id="idCheck" resultType="int">
  		SELECT COUNT(*) FROM FOOD_MEMBER WHERE ID = #{id}
  	</select>
  	
