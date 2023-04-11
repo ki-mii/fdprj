@@ -236,22 +236,22 @@
 				</c:if>
 				<c:if test="${member.adminCk == 0 }"> <!-- 회원 로그인o -->
 					<li class="login-item" style="margin-top: -50px;">
-						<a class="nav-link" href="#">♡${member.name}님♡</a>
+						<span style="color:white">♡${member.name}님♡</span>
 						<a class="nav-link" id="info_button" href="/member/info">회원정보</a>
 						<a class="nav-link" id="logout_button" href="/member/logout.do">로그아웃</a>
 					</li>
 				</c:if>
 				<c:if test="${member.adminCk == 2 }"> <!-- 점주 로그인o -->
 					<li class="login-item" style="margin-top: -50px;">
-						<a class="nav-link" href="#">♡${member.name} 점주님♡</a>
+						<span style="color:white">♡${member.name} 점주님♡</span>
 						<a class="nav-link" id="info_button" href="/member/info">회원정보</a>
 						<a class="nav-link" id="logout_button" href="/member/logout.do">로그아웃</a>
 					</li>
 				</c:if>
 				<c:if test="${member.adminCk == 1 }"> <!-- 관리자계정 -->
 					<li class="login-item" style="margin-top: -50px;">
-						<a class="nav-link" href="#">♡관리자님♡</a>
-						<a class="nav-link" href="#">관리자페이지</a>
+						<span style="color:white;">♡관리자님♡</span>
+						<a class="nav-link" href="/store/main">관리자페이지</a>
 						<a class="nav-link" id="logout_button" href="/member/logout.do">로그아웃</a>
 					</li>
 				</c:if>
